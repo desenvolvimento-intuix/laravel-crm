@@ -34,6 +34,5 @@
                 "Intuix\\Crm\\Providers\\CrmServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
