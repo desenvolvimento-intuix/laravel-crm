@@ -1,0 +1,38 @@
+{
+    "name": "intuix/laravel-crm",
+    "version": "dev-master",
+    "description": "Laravel package",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Rafael Zingano",
+            "email": "confrariaweb@gmail.com"
+        }
+    ],
+    "require": {
+        "barryvdh/laravel-dompdf": "^1.0",
+        "confrariaweb/laravel-document": "dev-master",
+        "confrariaweb/laravel-file": "dev-master",
+        "intuix/laravel-checklist": "dev-master",
+        "intuix/laravel-contrato": "dev-master",
+        "intuix/laravel-documento": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Intuix\\Crm\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Intuix\\Crm\\Providers\\CrmServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
