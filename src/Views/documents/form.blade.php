@@ -13,7 +13,7 @@
         <label>Grupos</label>
         <select name="groups[]" id="" class="form-control mb-3" multiple>
             @foreach($groups as $group)
-                <option value="{{ $group->id }}" {{ $document->groups->where('id', $group->id)->count() > 0? 'selected' : NULL }}>{{ $group->name }}</option>
+                <option value="{{ $group->id }}" {{ isset($document) && $document->groups->where('id', $group->id)->count() > 0? 'selected' : NULL }}>{{ $group->name }}</option>
             @endforeach
         </select>
         <label>Arquivo</label>
