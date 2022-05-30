@@ -17,10 +17,7 @@
             @endforeach
         </select>
         <label>Arquivo</label>
-        <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile" name="file">
-            <label class="custom-file-label" for="customFile">Selecione o arquivo</label>
-        </div>
+        <input type="file" class="form-control mb-3" id="customFile" name="file">
         <label class="mt-5">Existem {{ isset($document)? $document->contents->count() : 0 }} versões desse documento</label>
         <hr>
         <h4>Hashs que podem ser usadas:</h4>
